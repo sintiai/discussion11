@@ -1,0 +1,174 @@
+
+/* Global Styles */
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Summary */
+#summary {
+    margin: 20px;
+    padding: 20px;
+}
+
+#summary p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0077b6;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+
+nav ul li a:hover {
+    background-color: #005f73;
+    transition: background-color 0.3s ease;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid lightblue;
+}
+
+/* Row Colors */
+tbody tr:nth-child(odd) {
+    background-color: skyblue;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Hover Effects */
+tbody tr:hover {
+    background-color: #A9A9A9;
+    transition: background-color 0.3s ease;
+}
+
+/* Individual Results */
+#individual-results {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#individual-results > h2 {
+    width: 100%;
+}
+
+.athlete img {
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 3px solid skyblue;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+
+.athlete img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .athlete img {
+        transition: none;
+    }
+
+    .athlete img:hover {
+        transform: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+}
+
+
+/* Definition List */
+dl {
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+    color: #0077b6;
+    margin-bottom: 5px;
+}
+
+dd {
+    margin: 0 0 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: whitesmoke;
+    color: #03045e;
+    padding: 20px;
+    text-align: center;
+}
+ /*Gallery*/
+.gallery {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 20px;
+    align-items: center; 
+} 
+
+/* Individual Image Styling */
+  .gallery img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 3px solid skyblue;
+    transition: transform 2s ease, box-shadow 2s ease; 
+} 
+/* 
+.gallery img:nth-child(2n){
+    width:30%;
+} */
+
+ .gallery img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
